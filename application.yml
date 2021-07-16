@@ -9,6 +9,12 @@ spring:
     name: springcloud-config-dev
 ---
 spring:
-  profiles: test
+  profiles: sit
   application:
-    name: springcloud-config-test
+    name: springcloud-config-sit
+---
+spring:
+  profiles: prod
+  application:
+    name: springcloud-config-prod
+    
