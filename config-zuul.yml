@@ -22,8 +22,8 @@ info:
   company.name: blog.study.zty
 zuul:
   routes:
-    mydept.serviceId: springcloud-provider-dept
-    mydept.path: /mydept/**
+    mydept.serviceId: springcloud-provider
+    mydept.path: /myzuul/**
   ignored-services: "*"  #不能再使用这个路径访问,,*表示隐藏全部微服务
   prefix: /zty #设置公共的前缀
 ---
@@ -47,8 +47,8 @@ info:
   company.name: blog.study.zty
 zuul:
   routes:
-    mydept.serviceId: springcloud-provider-dept
-    mydept.path: /mydept/**
+    mydept.serviceId: springcloud-provider
+    mydept.path: /myzuul/**
   ignored-services: "*"  #不能再使用这个路径访问,,*表示隐藏全部微服务
   prefix: /zty #设置公共的前缀
 ---
@@ -72,7 +72,7 @@ info:
   company.name: blog.study.zty
 zuul:
   routes:
-    mydept.serviceId: springcloud-provider-dept
-    mydept.path: /mydept/**
+    mydept.serviceId: springcloud-provider
+    mydept.path: /myzuul/**
   ignored-services: "*"  #不能再使用这个路径访问,,*表示隐藏全部微服务
   prefix: /zty #设置公共的前缀
